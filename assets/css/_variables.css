@@ -1,0 +1,13 @@
+:root {
+    /* Colors */
+    --clean: #F2F2F2;
+    --white: #FFFFFF;
+    --dark: #383838;
+    --bol-1: #383840;
+    --bol-2: #F3BF3A;
+    --bol-3: #EB5757;
+
+    /* Fonts */
+    --ft-size: 11px;
+    --ft-family: 'Ruda', sans-serif;
+}

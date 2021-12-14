@@ -1,0 +1,264 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ft-family);
+    font-weight: 400;
+    font-size: var(--ft-size);
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--white);
+}
+.banner {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: var(--clean);
+    margin: auto;
+    box-shadow: rgba(1, 1, 8.28, #000);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.banner .display-dark {
+    position: absolute;
+    top: -238px;
+    left: 54%;
+    width: 400px;
+    height: 1000px;
+    background-color: var(--dark);
+    transform: rotate(-34deg);
+    z-index: 2;
+}
+.banner .display-ft-tenis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    z-index: 3;
+}
+.banner .display-ft-tenis .tenis {
+    width: 355px;
+    margin: auto;
+    z-index: 4;
+    transform: rotate(-2deg);
+    margin-left: -5px;
+    margin-top: 150px;
+}
+.banner .display-text {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    z-index: 5;
+}
+.banner .display-text .container {
+    width: 340px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.banner .display-text .container .row {
+    margin-bottom: 15px;
+}
+.banner .display-text .container .row h1 {
+    font-family: var(--ft-family);
+    font-weight: bold;
+    line-height: 38px;
+}
+.banner .display-text .container .flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.banner .display-text .container .row .colors {
+    min-width: 90px;
+}
+.banner .display-text .container .row .colors .btn {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.banner .display-text .container .row .colors .btn-primary {
+    background-color: var(--bol-1);
+}
+.banner .display-text .container .row .colors .btn-secondary {
+    background-color: var(--bol-2);
+}
+.banner .display-text .container .row .colors .btn-terciary {
+    background-color: var(--bol-3);
+}
+.banner .display-text .container .row .price {
+    width: 100%;
+}
+.banner .display-text .container .row .price p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.banner .display-text .container .mb-0 {
+    margin-bottom: 0px !important;
+}
+.banner .display-text .container .row .btn-comprar {
+    font-size: 1rem;
+    font-family: var(--ft-family);
+    padding: 10px 40px;
+    color: var(--white);
+    background-color: var(--dark);
+    border-radius: 0px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 0px;
+    bottom: -601px;
+}
+.modal .modal-container {
+    width: 350px;
+    min-height: 250px;
+    background-color: var(--clean);
+    border-radius: 3px;
+    padding: 10px;
+}
+.modal .modal-container .modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.modal .modal-container .modal-header .btn-closed {
+    outline: none;
+    background-color: transparent;
+}
+.modal .modal-container .modal-body {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.modal .modal-container .modal-body h2 {
+    font-family: var(--ft-family);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.modal .modal-container .modal-body form {
+    width: 100%;
+    height: 100%;
+}
+.modal .modal-container .modal-body form .formgroup {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.modal .modal-container .modal-body form .formgroup label {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+.modal .modal-container .modal-body form .formgroup input {
+    border: none;
+    background-color: var(--white);
+    padding: 7px;
+    font-size: 1rem;
+    font-family: var(--ft-family);
+    outline: 1px solid var(--clean);
+    border-radius: 2px;
+}
+.modal .modal-container .modal-body form .row {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    padding-top: 10px;
+}
+.modal .modal-container .modal-body form .row .btn-comprar {
+    font-size: 1rem;
+    font-family: var(--ft-family);
+    color: var(--white);
+    background-color: var(--dark);
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 2px;
+}
+.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.253);
+    z-index: 99999;
+    transition: display ease 0.2s;
+    animation: animate-open-modal;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in;
+    opacity: 0;
+}
+.close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.253);
+    z-index: 99999;
+    transition: display ease 0.2s;
+    animation: animate-closed-modal;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in;
+    opacity: 1;
+}
+
+/* Utils */
+.btn-active-primary {
+    outline: 3px solid var(--bol-1);
+}
+.btn-active-secondary {
+    outline: 3px solid var(--bol-2);
+}
+.btn-active-terciary {
+    outline: 3px solid var(--bol-3);
+}
+
+@keyframes animate-open-modal {
+    0% {
+        bottom: -601px;
+        opacity: 0;
+        transition: opacity ease 0.2s;
+    }
+    100% {
+        bottom: 0px;
+        opacity: 1;
+        transition: opacity ease 0.2s;
+    }
+}
+
+@keyframes animate-closed-modal {
+    0% {
+        bottom: 0px;
+        opacity: 1;
+        transition: opacity ease 0.2s;
+    }
+    100% {
+        bottom: -601px;
+        opacity: 0;
+        transition: opacity ease 0.2s;
+    }
+}
