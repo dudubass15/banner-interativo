@@ -21,13 +21,7 @@ Segue abaixo alguns screenshots:
 
 # Vídeo de demonstração do projeto:
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true">
-    <source src="./screenshot/video-demonstracao.mp4" type="video/mp4">
-    <source src="./screenshot/video-demonstracao.ogg" type="video/ogg">
-    <source src="./screenshot/video-demonstracao.webm" type="video/webm">
-  </video>
-</figure>
+[Google Drive](https://drive.google.com/file/d/1T4QAUn5jDnaJspztEuMlyYvkmD0sG-We/view?usp=sharing)
 
 
 ## Contato
